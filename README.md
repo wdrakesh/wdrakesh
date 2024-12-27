@@ -20,8 +20,5 @@ I'm a passionate developer with a keen interest in software development and open
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
 
-## Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=wdrakesh&layout=compact&theme=radical)
-
 ## Connect with Me
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin)]([https://www.linkedin.com/in/wdrakesh/](https://www.linkedin.com/in/rakesh-gupta-67367b46/))
