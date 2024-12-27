@@ -6,15 +6,15 @@
 I'm a passionate developer with a keen interest in software development and open-source contributions. I enjoy learning new technologies and applying them to solve real-world problems.
 
 - 🔭 I’m currently working on various web development projects.
-- 🌱 I’m currently learning Cloud Computing and DevOps.
+- 🌱 I’m currently learning Kubernates and DevOps.
 - 👯 I’m looking to collaborate on open-source projects.
-- 💬 Ask me about web development, JavaScript, and Python.
+- 💬 Ask me about web development, JavaScript, Magento2.x and Adobe Commerce.
 - 📫 How to reach me: [wdrakesh@example.com](mailto:wdrakesh@example.com)
 - 😄 Pronouns: They/Them
 
 ## Languages and Tools
 ![JavaScript](https://img.shields.io/badge/-JavaScript-333333?style=flat&logo=javascript)
-![Python](https://img.shields.io/badge/-Python-333333?style=flat&logo=python)
+![Magento](https://img.shields.io/badge/-Python-333333?style=flat&logo=magento)
 ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS3-333333?style=flat&logo=css3)
 ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
