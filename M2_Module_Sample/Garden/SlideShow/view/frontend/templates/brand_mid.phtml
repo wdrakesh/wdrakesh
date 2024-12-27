@@ -1,0 +1,65 @@
+<?php
+/**
+ * Copyright © The Garden Health & Beauty Store, Inc All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php
+/**
+ * Home Page favourite brand and banner
+ *
+ * @var $block Garden\SlideShow\Block\CmsPage
+ * @var \Magento\Framework\Escaper $escaper
+ */
+?>
+<?php $brandData = $block->getFavouriteBrand(); ?>
+<?php if ($brandData->getSize()): ?>
+    <div class="brands-pic"><img
+            src="<?= $escaper->escapeUrl($this->getViewFileUrl('Garden_SlideShow::images/brands-love.png')); ?>"
+            alt="<?= $escaper->escapeHtml(__('Favourite Brands')); ?>"/>
+    </div>
+    <div class="brands-love">
+        <ul>
+            <?php foreach ($brandData as $brand) : ?>
+                <?php $imageName = $brand->getFldImage(); ?>
+                <?php if ($block->IsImageExits($imageName)) : ?>
+                    <li>
+                        <a href="<?=  $escaper->escapeUrl($brand->getStoreUrlLink() . $brand->getUrlLink()) ?>">
+                            <img itemprop="image" src="<?= $escaper->escapeHtml($block->getFullImagePath($imageName)); ?>"
+                                                                                                     alt="<?= $escaper->escapeHtml($brand->getTitle()) ?>"></a>
+                    </li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+        </ul>
+    </div>
+<?php endif; ?>
+<!--Brand after featured brand-->
+<?php $bannerData = $block->getBannerData(); ?>
+<?php if ($bannerData->getSize()): ?>
+    <div class="homepage-banner">
+        <div class="flwidth2">
+            <?php foreach ($bannerData as $banner) : ?>
+                <?php $imageName = $banner->getFldImage(); ?>
+                <?php if ($block->IsImageExits($imageName)) : ?>
+                    <div class="boxgeghomebanner ">
+                        <a href="<?= $escaper->escapeUrl($banner->getStoreUrlLink() . $banner->getUrlLink()) ?>">
+                            <div class="topban">
+                                <div class="boxgeghomebannerimg">
+                                    <div class="topsrip"><?= $escaper->escapeHtml($banner->getTitle()) ?> <img alt="arrow"
+                                                                                        src="<?= $escaper->escapeUrl($this->getViewFileUrl('Garden_SlideShow::images/front-arrow.png')); ?>"
+                                                                                        width="6"
+                                                                                        height="11">
+                                    </div>
+                                    <img src="<?= $escaper->escapeHtml($block->getFullImagePath($imageName)); ?>"
+                                         alt="<?= $escaper->escapeHtml($banner->getTitle()) ?>">
+                                </div>
+                            </div>
+                            <div class="boxgeghomebannertext"><p><?= $escaper->escapeHtml($banner->getFldDescription()) ?></p></div>
+                        </a>
+                    </div>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </div>
+    </div>
+<?php endif; ?>

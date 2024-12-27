@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © The Garden Health & Beauty Store, Inc All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="garden_slideshow" resource="default" engine="innodb" comment="SlideShow">
+        <column xsi:type="smallint" name="slideshow_id" padding="6" unsigned="false" nullable="false" identity="true"
+                comment="Entity ID"/>
+        <column xsi:type="varchar" name="title" nullable="false" length="255" comment="Title"/>
+        <column xsi:type="varchar" name="display_position" nullable="true" length="50" comment="Display Position"/>
+        <column xsi:type="varchar" name="store_id" length="50"  nullable="false" default="0" comment="Store Id"/>
+        <column xsi:type="mediumtext" name="fld_description" nullable="true" comment="Description"/>
+        <column xsi:type="varchar" name="fld_image" nullable="true" length="100" comment="Image"/>
+        <column xsi:type="varchar" name="url_link" nullable="true" length="255" comment="url link"/>
+        <column xsi:type="smallint" name="is_active" padding="5" unsigned="true" nullable="false" identity="false"
+                default="0" comment="Status"/>
+        <column xsi:type="smallint" name="sort_order" padding="6" unsigned="true" nullable="false" identity="false"
+                comment="Sort Order" default="0"/>
+        <column xsi:type="timestamp" name="creation_time" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Created Time"/>
+        <column xsi:type="timestamp" name="update_time" on_update="true" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Modification Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="slideshow_id"/>
+        </constraint>
+        <index referenceId="INDEX_STORE_ID" indexType="btree">
+           <column name="store_id"/>
+        </index>
+        <index referenceId="INDEX_DISPLAY_POSITION" indexType="btree">
+                <column name="display_position"/>
+        </index>
+    </table>
+</schema>

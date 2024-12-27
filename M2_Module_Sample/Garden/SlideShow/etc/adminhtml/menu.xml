@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © The Garden Health & Beauty Store, Inc All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magento_Backend::garden_modules" title="Garden" module="Garden_SlideShow"
+             sortOrder="51" resource="Magento_Backend::garden_modules"/>
+        <add id="Garden_SlideShow::content" title="Home Content"
+             translate="title" module="Garden_SlideShow" parent="Magento_Backend::garden_modules" sortOrder="10" resource="Garden_SlideShow::content" />
+        <add id="Garden_SlideShow::manage" title="Content" toolTip="Manage Home Slider, Brands on Home Page"
+             module="Garden_SlideShow" sortOrder="10" action="slideshow/slideshow/index"
+             resource="Garden_SlideShow::manage"
+             parent="Garden_SlideShow::content"/>
+    </menu>
+</config>

@@ -1,0 +1,23 @@
+{
+    "garden_slideshow": {
+        "column": {
+            "slideshow_id": true,
+            "title": true,
+            "display_position": true,
+            "store_id": true,
+            "fld_description": true,
+            "fld_image": true,
+            "url_link": true,
+            "is_active": true,
+            "sort_order": true,
+            "creation_time": true,
+            "update_time": true
+        },
+        "index": {
+            "GARDEN_SLIDESHOW_STORE_ID_DISPLAY_POSITION": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
