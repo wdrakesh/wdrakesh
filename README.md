@@ -1,5 +1,4 @@
 # Hi there, I'm Rakesh 👋
-
 ![Profile Views](https://komarev.com/ghpvc/?username=wdrakesh&color=blue)
 
 ## About Me
@@ -20,9 +19,6 @@ I'm a passionate developer with a keen interest in software development and open
 ![Docker](https://img.shields.io/badge/-Docker-333333?style=flat&logo=docker)
 ![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-333333?style=flat&logo=github)
-
-## GitHub Stats
-![Rakesh's GitHub stats](https://github-readme-stats.vercel.app/api?username=wdrakesh&show_icons=true&theme=radical)
 
 ## Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=wdrakesh&layout=compact&theme=radical)
